@@ -33,10 +33,10 @@ class Program
         for(int i = 0; i < numbers.Count(); i++){
              sum = sum + numbers[i];
         }
-        Console.WriteLine($"The sum of the number in the list is : {sum}");
+        Console.WriteLine($"The sum is: {sum}");
         //Compute the average of the numbers in the list.
         average = sum / (numbers.Count() - 1);
-        Console.WriteLine($"The average of the numbers in the list is : {average}");
+        Console.WriteLine($"The average is: {average}");
 
         //Find the maximum, or largest, number in the list.
         int max = 0;
@@ -45,6 +45,6 @@ class Program
                 max = num;
             }
         }
-        Console.WriteLine($"The maximum number in the list is {max}");
+        Console.WriteLine($"The largest number is: {max}");
     }
 }
