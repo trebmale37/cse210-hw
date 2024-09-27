@@ -1,4 +1,4 @@
-using system;
+using System;
 
 public class Job{
     public string _companyName;
@@ -7,7 +7,7 @@ public class Job{
     public double _endYear;
 
     public void DisplayMessage(){
-        Console.WriteLine($" ({_companyName})");
+        Console.WriteLine($"{_jobTitle} ({_companyName}) {_startYear}-{_endYear}");
          } 
    
 }
