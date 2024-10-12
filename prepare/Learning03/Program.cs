@@ -20,6 +20,7 @@ class Program
         Fraction fraction3 = new Fraction(1,3);
         Console.WriteLine(fraction3.GetFractionString());
         Console.WriteLine(fraction3.GetDecimalValue());
+
     }
     
 }
