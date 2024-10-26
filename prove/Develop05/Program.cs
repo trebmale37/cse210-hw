@@ -4,6 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        Console.Clear();
+       ListingActivity a = new ListingActivity();
+       ReflectionActivity b = new ReflectionActivity();
+       
+       a.Run();
+
+        
     }
 }
