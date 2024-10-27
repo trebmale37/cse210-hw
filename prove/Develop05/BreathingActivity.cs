@@ -8,13 +8,12 @@ public class BreatingActivity : Activity{
 
     public void Run(){
         DisplayStartingMessage();
-        Console.WriteLine();
         //Creating variable to store the duration for the program
         int remainingTime = duration;
         while (remainingTime > 0){
-            Console.WriteLine("Breath In ");
+            Console.WriteLine("Breathe In...");
             ShowCountDown(3);
-            Console.WriteLine("Breath Out");
+            Console.WriteLine("Now breath out....\n");
             ShowCountDown(3);
             remainingTime -= 6;
         }

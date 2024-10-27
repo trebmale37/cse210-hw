@@ -21,18 +21,16 @@ public class ListingActivity : Activity{
     public void Run(){
         //Displaying the start message
         DisplayStartingMessage();
-        Console.WriteLine();
-
         //Displaying a randome prompt question from the list of prompts
         //Creating a random method
         Random ran = new Random();
 
         int index = ran.Next(_prompts.Count());
         //Getting a random prompt from the list of prompts
-        Console.WriteLine(_prompts[index]);
+        Console.WriteLine($"List as many responses you can to the following prompt:");
+        Console.WriteLine($"-----{_prompts[index]}-----");
+        Console.WriteLine($"You may begin in: ");
         ShowCountDown(5);
-        
-        Console.WriteLine("Enter your Response: ");
         
         DateTime startTime = DateTime.Now;
         while ((DateTime.Now - startTime).TotalSeconds < _duration){

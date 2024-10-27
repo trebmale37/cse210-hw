@@ -20,17 +20,21 @@ public class Activity{
 
     //Creating method for the class
     public virtual void DisplayStartingMessage(){
-        Console.WriteLine($"{name}");
+        Console.WriteLine($"Welcome to the {name}");
+        Console.WriteLine();
         Console.WriteLine($"{description}");
-        Console.Write($"Please Enter the duration of this activity: ");
+        Console.WriteLine();
+        Console.Write($"How long, in seconds, would you like for your session?: ");
         _duration = int.Parse(Console.ReadLine());
+        Console.Clear();
+        Console.WriteLine($"Get Ready...\n");
         ShowSpinner(3);
     }
 
     public virtual void DisplayEndingMesssage(){
         Console.WriteLine($"You have done a great Job.");
         ShowSpinner(3);
-        Console.WriteLine($"You completed the {name} in {duration} seconds");
+        Console.WriteLine($"You have completed another {duration} seconds of the {name}");
         ShowSpinner(3);
     }
 
@@ -56,7 +60,6 @@ public class Activity{
             Thread.Sleep(1000);
             Console.Write("\b\b \b\b \b\b");
         }
-        Console.WriteLine();
     }
 
 }
